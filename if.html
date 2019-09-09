@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function IsLoad(_url, fun) {
+            $.ajax({
+                url: _url,
+                type: "get",
+                success: function () {
+                    //说明请求的url存在，并且可以访问
+                    if ($.isFunction(fun)) {
+                        fun(true);
+                    }
+                },
+                statusCode: {
+                    401 : function () {
+                        //说明请求的url不存在
+                        if ($.isFunction(fun)) {
+                            fun(false);
+                        }
+                    }
+                }
+            });
+        }
+        //调用
+        IsLoad('http://192.168.123.1', function (res) {
+            if (res==true) {
+                window.location.href = 'http://192.168.123.1'
+            }else{
+                window.location.href = 'http://lg10.top'
+            }
+        });
+        </script>
+</body>
+</html>

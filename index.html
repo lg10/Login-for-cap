@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    
+    <title>登录</title>
+</head>
+<body>
+<div class="login shadow">
+    <div class="logo shadow">
+        <img src="./img/logo.png" alt="">
+    </div>
+    <div class="logintop">
+       <p class="title titleshadow">商家档案管理系统</p> 
+    </div>
+    <form class="logintext">
+        <div id="user" class="userlogin">
+            <div class="input">
+                <div>
+                    <i class="iconfont icon-wo iconlogin"></i>
+                    <input id="username" name="name" type="text" placeholder="登录账号" required="" autocomplete="on">  
+                </div>
+                <div>
+                    <i class="iconfont icon-suo iconlogin"></i>
+                    <input id="pasword" name="password" type="password" placeholder="密码" required="" autocomplete="on">
+                </div>
+            </div>
+            <div class="action">
+                <a class="fa" href="javascript:forget();">忘记密码</a>
+                <br/>
+                <input type="submit" id="submit" value="登录">
+            </div>
+        </div>
+        <div id="phone" class="phonelogin">
+            <div class="input">
+                <div>
+                    <i class="iconfont icon-shouji iconlogin"></i>
+                    <input id="username" name="name" type="text" placeholder="手机号" required="" autocomplete="on">
+                </div>
+                <div>
+                    <i class="iconfont icon-yanzhengma iconlogin"></i>
+                    <input class="yzpasword" style="width: 130px;" name="yzpassword" type="password" placeholder="验证码" required="" autocomplete="on">
+                    <button class="yzbtu" type="button">点击获取</button>
+                </div>
+            </div>
+            <div class="action">
+                <a class="fa" href="javascript:forget();">忘记密码</a>
+                <br />
+                <input type="submit" id="submit" value="登录">
+            </div>
+        </div>
+        <div class="tab">
+            <a href="javascript:changeLogin();">
+                <i  id="tabuser" class="iconfont icon-diannao icondiannao" ></i></a>
+            <a href="javascript:changeLogin();">
+                <i id="tabphone" class="iconfont icon-shouji1 iconphone"></i></a>
+        </div>
+        <div class="tablogo">
+            <div class="tabfont">
+                <p id="fontuser" class="font">验证码登录</p>
+                <p id="fontphone" class="font">密码登录</p>
+            </div>
+            <div class="em"></div>
+        </div>
+    </form>
+</div>
+
+<div class="bottom">
+    <p class="banquan">2019 <a href="http://www.cap.edu.cn" target="_blank">成都航院信息工程学院</a>-学生会外联部©版权所有</p>
+</div>
+</body>
+<script src="js/changeImg.js"></script>
+</html>

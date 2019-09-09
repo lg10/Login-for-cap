@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/718412.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+
+.login {
+    width: 428px;
+    height: 350px;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -214px;
+    /* background-color: aliceblue; */
+}
+
+.logintop {
+    width: 100%;
+    height: 40%;
+    background: rgba(66, 66, 66, 0.26);
+}
+
+.logintext {
+    width: 100%;
+    height: 60%;
+    background: rgba(243, 243, 243, 0.822)
+}
+
+.userlogin,
+.phonelogin {
+    width: 100%;
+    height: 100%;
+}
+
+.phonelogin {
+    display: none;
+}
+
+
+.logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 139px;
+    top: -80px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    z-index: 90;
+}
+
+.title {
+    text-align: center;
+    position: absolute;
+    font-size: 40px;
+    width: 100%;
+    top: 21%;
+    background: #00c6ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background-image: -webkit-linear-gradient(left, blue, #66ffff 10%, #cc00ff 20%, #CC00CC 30%, #CCCCFF 40%, #00FFFF 50%, #CCCCFF 60%, #CC00CC 70%, #CC00FF 80%, #66FFFF 90%, blue 100%); */
+    -webkit-text-fill-color: transparent;
+    /* 将字体设置成透明色  */
+    -webkit-background-clip: text;
+    /* 裁剪背景图，使文字作为裁剪区域向外裁剪  */
+    /* -webkit-background-size: 200% 100%; */
+    /* -webkit-animation: masked-animation 4s linear infinite; */
+}
+
+.titleshadow {
+    -webkit-text-stroke: 1px #fff;
+    z-index: 0;
+}
+
+.shadow {
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 6px #2d2a2a;
+    box-shadow: 0 0 16px #333;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    width: 100%;
+    height: 25px;
+    background: rgba(49, 49, 49, 0.52);
+    position: absolute;
+    bottom: 0%;
+}
+
+.banquan {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.input {
+    position: relative;
+    top: 15%;
+    left: 80px;
+    width: 100%;
+    height: 100px;
+}
+
+.iconlogin {
+    position: absolute;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    background-color: rgba(43, 43, 43, 0.329);
+    z-index: 99;
+}
+
+.yzpasword {
+    width: 130px;
+}
+
+.logintext input {
+    height: 32px;
+    width: 210px;
+    line-height: 25px;
+    padding-left: 10px;
+    margin-left: 40px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 3px 5px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-left-color: rgba(255, 255, 255, 0);
+
+}
+
+
+
+.input div {
+    margin-bottom: 15px;
+}
+
+.logintext input:focus {
+    border-style: solid;
+    border-color: #75a1f0;
+    box-shadow: 0 0 6px #75a1f0;
+}
+
+.action {
+    position: absolute;
+    text-align: right;
+    width: 260px;
+    left: 80px;
+    top: 270px;
+}
+
+.tab {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+}
+
+#tabuser {
+    display: none;
+}
+
+.iconphone {
+    position: absolute;
+    font-size: 35px;
+    top: -10px;
+    right: -23px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: rgba(52, 52, 52, 0.69);
+    z-index: 99;
+}
+
+.icondiannao {
+    position: absolute;
+    font-size: 35px;
+    top: -7px;
+    right: -20px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: rgba(52, 52, 52, 0.69);
+    z-index: 99;
+}
+
+@keyframes masked-animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+a:link {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+
+/* //未访问：蓝色、无下划线    */
+a:active {}
+
+/* //激活：红色    */
+a:visited {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+
+/* //已访问：purple、无下划线    */
+a:hover {
+
+    text-decoration: underline;
+}
+
+/* //鼠标移近：红色、下划线  */
+
+.fa {
+    margin: 0%;
+}
+
+.fa:link {
+    color: rgba(88, 88, 88, 0.719);
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.action input {
+    position: absolute;
+    right: 0px;
+    border: none;
+    outline: none;
+    background: #6699cc;
+    color: #fff;
+    width: 260px;
+    border-radius: 4px;
+    border: 1px solid #217ef2;
+    background-color: #3890ff;
+    background-image: linear-gradient(0deg, hsla(0, 0%, 100%, .06) 0, hsla(0, 0%, 100%, .06)), linear-gradient(0deg, rgba(9, 109, 236, .5) 0, rgba(76, 155, 255, .5));
+    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .08), 0 1px 1px rgba(0, 0, 0, .08);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .1);
+}
+
+.tablogo {
+    position: absolute;
+    width: 55px;
+    height: 20px;
+    top: 328px;
+    right: 44px;
+}
+
+.em {
+    position: absolute;
+    right: -10px;
+    top: 4px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #1c2a3b00;
+    border-right: 5px solid #0072ff00;
+    border-bottom: 5px solid #0072ff00;
+    border-left: 5px solid #368bf8;
+}
+
+#fontphone {
+    display: none;
+}
+
+.tabfont {
+    text-align: center;
+    font-size: 5px;
+    background-color: #ffe1cc;
+    border-color: #3087f6;
+    line-height: 12px;
+    position: relative;
+    z-index: 9999;
+    color: #378df9;
+    background-color: #6379e338;
+    border: 1px solid #368bf8;
+    padding: 2px 5px;
+}
+
+.yzbtu {
+    border: 2px solid #0073ffa9;
+    color: #4b97f4;
+    font-size: 10px;
+    line-height: 25px;
+    width: 70px;
+    size: 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.yzbtu:hover {
+    color: #fff;
+    background-color: #0073ffa9;
+}
+
+.yzbtu:link {
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 6px #2d2a2a;
+    box-shadow: 0 0 16px #333;
+}
